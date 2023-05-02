@@ -6,4 +6,9 @@ def main(n):
     Returns:
         string: return  answer
     """
-    return
+    x=""
+    for i in range(n):
+        x=x+","+str(i)
+        x.lstrip(",")
+    return x[1:]
+print(main(3))
